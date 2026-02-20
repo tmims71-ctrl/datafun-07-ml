@@ -6,9 +6,9 @@ def print_variables():
     print(y)
     print(z)   
 
-print_variables()
-
 y
+z
+print_variables()
 
 z
 
