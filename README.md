@@ -40,7 +40,7 @@ pip install -r requirements.txt
 
 - Project cloned to local computer C:\Repos.
 
-- Added .gitignore and requirements.txt.
+- Added .gitignore from a list recommended by Github, selected one compatible with Python
 
 - Created and activated a local virtual environment (.venv).
 
