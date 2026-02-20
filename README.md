@@ -45,3 +45,5 @@ pip install -r requirements.txt
 - Created and activated a local virtual environment (.venv).
 
 - Installed required packages.
+
+- Added requirements.txt
