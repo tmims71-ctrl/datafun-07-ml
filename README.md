@@ -1,4 +1,19 @@
 # datafun-07-ml
+
+## Project Planning
+
+Two languages:
+
+- This file is written in **Markdown**, a simple markup language for presenting text.
+- Our analytics logic is written in **Python**, a scripting language for implementing logic.
+
+When we first encounter a **new and unknown data set**, we want to explore: run some quick checks, view the distributions, see if the data is clean (or if there are many missing values or outliers).
+
+In this module, we will create a guided project.
+There is no specification - we introduce some topics including machine learning as we work through the module.
+The project will include Jupyter. 
+
+
 ```
 git push
 ```
