@@ -37,6 +37,15 @@ class SalariedCommissionEmployee(CommissionEmployee):
 
 
 
+# Test code to demonstrate SalariedCommissionEmployee functionality
+if __name__ == "__main__":
+    from decimal import Decimal
+    employee = SalariedCommissionEmployee(
+        "Jane", "Doe", "123-45-6789",
+        Decimal("10000.00"), Decimal("0.06"), Decimal("500.00")
+    )
+    print(employee)
+    print("Earnings:", employee.earnings())
 ##########################################################################
 # (C) Copyright 2019 by Deitel & Associates, Inc. and                    #
 # Pearson Education, Inc. All Rights Reserved.                           #
