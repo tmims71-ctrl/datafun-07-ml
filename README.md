@@ -4,18 +4,47 @@ git push
 ```
 ## Project Setup (Windows / PowerShell, loacl computer C:)
 
-cd c:/Repos
+ Clone to local: Open a **machine terminal** in your **`Repos`** folder and clone your new repo.
 
-git clone httpsc://github.com/tmims71-crtl/datafun-07-ml
+  ```shell
+  git clone https://github.com/tmims71-ctrl/datafun-07-ml
+  ```
 
-cd datafun-07-ml
-loc
-python -m venv .venv
+4. Open project in VS Code: Change directory into the repo and open the project in VS Code by running `code .` ("code dot"):
 
-.\\.venv\\Scripts\\Activate.ps1
+  ```shell
+  cd datafun-04-notebooks
+  code .
+  ```
 
-python -m pip install --upgrade pip
+5. Install recommended extensions.
 
+   - When VS Code opens, accept the Extension Recommendations (click **`Install All`** or similar when asked).
+
+6. Set up a project Python environment (managed by `uv`) and align VS Code with it.
+
+   - Use VS Code menu option `Terminal` / `New Terminal` to open a **VS Code terminal** in the root project folder.
+   - Run the following commands, one at a time, hitting ENTER after each:
+
+    ```shell
+    uv self update
+    uv python pin 3.14
+    uv sync --extra dev --extra docs --upgrade
+    ```
+
+If asked: "We noticed a new environment has been created. Do you want to select it for the workspace folder?" Click **"Yes"**.
+
+If successful, you'll see a new `.venv` folder appear in the root project folder.
+
+Optional (recommended): install and run pre-commit checks (repeat the git `add` and `commit` twice if needed):
+
+```shell
+uvx pre-commit install
+git add -A
+uvx pre-commit run --all-files
+git add -A
+uvx pre-commit run --all-files
+```
 pip install -r requirements.txt
 
 ## Requirements
