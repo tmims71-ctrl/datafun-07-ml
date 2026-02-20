@@ -3,7 +3,7 @@
 name = "datafun-07-ml"
 version = "0.1.0"
 description = "Guided machine learning project with Jupyter and data science tools."
-authors = ["Tammy Mims <https://github.com/tmims71-ctrl/datafun-07-ml>"]
+authors = ["Tammy Mims"]
 requires-python = ">=3.8"
 dependencies = [
 	"jupyterlab",
