@@ -9,21 +9,6 @@
 
 This project is a guided exploration of machine learning concepts using Python and Jupyter. The setup uses modern Python packaging with `pyproject.toml` and dependency management via `uv`. The environment is configured for Python 3.14.2, and all required data science packages are installed for reproducible analysis.
 
-### Key Setup Steps Completed
-
-- Created and configured `pyproject.toml` for dependency management
-- Installed dependencies (`jupyterlab`, `numpy`, `pandas`, `pyarrow`, `matplotlib`, `seaborn`, `scipy`) using `uv sync`
-- Selected Python 3.14.2 environment in VS Code for consistency
-- Verified environment and package installation
-- Updated README with project details and setup instructions
-- Ready to launch JupyterLab and begin analysis
-
----
-
-# Project 7: Guided Project (Machine Learning)
-
-**Author:** Tammy Mims  
-**Date:** February 20, 2026
 
 ## Project Planning
 
@@ -77,16 +62,9 @@ git push
     pip install .
     ```
 
-5. **Install pre-commit hooks (optional, recommended):**
-  ```shell
-  uvx pre-commit install
-  git add -A
-  uvx pre-commit run --all-files
-  git add -A
-  uvx pre-commit run --all-files
-  ```
 
-6. **Launch JupyterLab:**
+
+5. **Launch JupyterLab:**
   ```shell
   jupyter lab
   ```
@@ -107,13 +85,7 @@ If successful, you'll see a new `.venv` folder appear in the root project folder
 Optional (recommended): install and run pre-commit checks (repeat the git `add` and `commit` twice if needed):
 
 ```shell
-uvx pre-commit install
-git add -A
-uvx pre-commit run --all-files
-git add -A
-uvx pre-commit run --all-files
 ```
-pip install -r requirements.txt
 
 ## Requirements
 
@@ -126,17 +98,45 @@ Project dependencies are managed in `pyproject.toml` for modern Python packaging
 - matplotlib
 - seaborn
 - scipy
+  
+### Key Setup Steps Completed
+
+- Created and configured `pyproject.toml` for dependency management
+- Installed dependencies (`jupyterlab`, `numpy`, `pandas`, `pyarrow`, `matplotlib`, `seaborn`, `scipy`) using `uv sync`
+- Selected Python 3.14.2 environment in VS Code for consistency
+- Verified environment and package installation
+- Updated README with project details and setup instructions
+- Ready to launch JupyterLab and begin analysis
+
+---
 
 ## Reminders Notes
 
-- Default README.md created with creation of repostory
+Default README.md created with creation of repostory
 
-- Project cloned to local computer C:\Repos.
+Project cloned to local computer C:\Repos.
 
-- Added .gitignore from a list recommended by Github, selected one compatible with Python
+Added .gitignore from a list recommended by Github, selected one compatible with Python
 
-- Created and activated a local virtual environment (.venv).
+Created and activated a local virtual environment (.venv).
 
-- Installed required packages.
+Installed required packages.
 
-- Added requirements.txt (legacy) and pyproject.toml (modern Python packaging)
+Added requirements.txt (legacy) and pyproject.toml (modern Python packaging)
+
+
+---
+
+## Recent Code Updates
+
+- Refactored `ch10/snippets_py/10_16.py`:
+  - Moved all import statements to the top of the file (PEP 8 compliance)
+  - Removed duplicate and leftover code (such as repeated imports and lambda definitions)
+  - Replaced lambda function with a proper def function
+  - Ensured all code that uses variables (like `nyc`) is placed after those variables are defined
+  - Added print statements to show DataFrame info and results
+  - Organized script so it runs smoothly and produces clear output and plots
+- Added demonstration/test code to `ch10/snippets_py/salariedcommissionemployee.py` so it prints example output when run directly
+- Provided guidance and fixes for running, cleaning, and understanding scripts and Jupyter notebooks in the project
+
+---
