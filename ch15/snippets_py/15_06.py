@@ -1,12 +1,11 @@
-# 15.6 Case Study: Unsupervised Machine Learning, Part 1—Dimensionality Reduction
-
-# Loading the Digits Dataset
+import matplotlib.pyplot as plt
 from sklearn.datasets import load_digits
+from sklearn.manifold import TSNE
+# 15.6 Case Study: Unsupervised Machine Learning, Part 1—Dimensionality Reduction
+# Loading the Digits Dataset
 
 digits = load_digits()
 
-# Creating a TSNE Estimator for Dimensionality Reduction
-from sklearn.manifold import TSNE
 
 tsne = TSNE(n_components=2, random_state=11)
 
@@ -15,8 +14,6 @@ reduced_data = tsne.fit_transform(digits.data)
 
 reduced_data.shape
 
-# Visualizing the Reduced Data
-import matplotlib.pyplot as plt
 
 dots = plt.scatter(reduced_data[:, 0], reduced_data[:, 1],
                     c='black')
