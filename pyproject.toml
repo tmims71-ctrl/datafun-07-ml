@@ -12,7 +12,8 @@ dependencies = [
 	"pyarrow",
 	"matplotlib",
 	"seaborn",
-	"scipy"
+	"scipy",
+	"scikit-learn"
 ]
 
 [tool.setuptools]
