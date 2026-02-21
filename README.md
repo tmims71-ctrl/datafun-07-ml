@@ -129,6 +129,13 @@ Added requirements.txt (legacy) and pyproject.toml (modern Python packaging)
 
 ## Recent Code Updates
 
+- Added chapter 15 examples (`ch15/snippets_py/15_04.py`, `15_05.py`, `15_06.py`, `15_07.py`) and corresponding Jupyter notebooks.
+  - Moved all import statements to the top of each file for PEP 8 and lint compliance
+  - Cleaned up duplicate imports and unused variables
+  - Replaced lambda functions with proper def functions where required
+  - Provided guidance for resolving common errors (module-level imports, unused variables, function redefinitions)
+  - Scripts and notebooks analyze NYC temperature time series, regression, and dimensionality reduction
+- To run chapter 15 code examples, open the Python script or notebook in VS Code or JupyterLab and execute all cells or run the script in a terminal
 - Refactored `ch10/snippets_py/10_16.py`:
   - Moved all import statements to the top of the file (PEP 8 compliance)
   - Removed duplicate and leftover code (such as repeated imports and lambda definitions)
