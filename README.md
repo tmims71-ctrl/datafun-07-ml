@@ -110,6 +110,17 @@ Project dependencies are managed in `pyproject.toml` for modern Python packaging
 
 ---
 
+## Notebook: `notebooks/tmims_ml.ipynb`
+
+The main project notebook demonstrates machine learning with linear regression using two approaches on NYC January temperature data (1895–2018).
+
+- **Part 1 – Chart a Straight Line** — Visualizes the Fahrenheit-to-Celsius formula as a straight line using a DataFrame and line chart
+- **Part 2 – Machine Learning Workflow** — Follows a full ML workflow (acquire, inspect, clean, describe, model, predict, visualize) using SciPy `linregress`
+- **Part 3 – Prediction** — Repeats the workflow using Scikit-Learn `LinearRegression` with a 75/25 train/test split and lambda-based predictions
+- **Part 4 – Insights** — Compares the two methods with three key observations on results, model strength, and scalability
+
+---
+
 ## Reminders Notes
 
 Default README.md created with creation of repostory
@@ -127,23 +138,3 @@ Added requirements.txt (legacy) and pyproject.toml (modern Python packaging)
 
 ---
 
-## Recent Code Updates
-
-- Added chapter 15 examples (`ch15/snippets_py/15_04.py`, `15_05.py`, `15_06.py`, `15_07.py`) and corresponding Jupyter notebooks.
-  - Moved all import statements to the top of each file for PEP 8 and lint compliance
-  - Cleaned up duplicate imports and unused variables
-  - Replaced lambda functions with proper def functions where required
-  - Provided guidance for resolving common errors (module-level imports, unused variables, function redefinitions)
-  - Scripts and notebooks analyze NYC temperature time series, regression, and dimensionality reduction
-- To run chapter 15 code examples, open the Python script or notebook in VS Code or JupyterLab and execute all cells or run the script in a terminal
-- Refactored `ch10/snippets_py/10_16.py`:
-  - Moved all import statements to the top of the file (PEP 8 compliance)
-  - Removed duplicate and leftover code (such as repeated imports and lambda definitions)
-  - Replaced lambda function with a proper def function
-  - Ensured all code that uses variables (like `nyc`) is placed after those variables are defined
-  - Added print statements to show DataFrame info and results
-  - Organized script so it runs smoothly and produces clear output and plots
-- Added demonstration/test code to `ch10/snippets_py/salariedcommissionemployee.py` so it prints example output when run directly
-- Provided guidance and fixes for running, cleaning, and understanding scripts and Jupyter notebooks in the project
-
----
